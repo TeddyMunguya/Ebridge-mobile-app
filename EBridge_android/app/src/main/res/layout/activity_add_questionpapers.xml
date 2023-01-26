@@ -1,0 +1,56 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.tracking.ebridge.AddQuestionpapers">
+
+    <EditText
+        android:id="@+id/questionsubject"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Subject"
+        android:singleLine="true"
+        android:paddingLeft="5dp" />
+
+    <EditText
+        android:id="@+id/questiondescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/questionsubject"
+        android:layout_marginTop="10dp"
+        android:hint="Description"
+        android:paddingLeft="5dp" />
+
+    <Button
+        android:id="@+id/questionchooseimage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose image"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/questiondescription"
+        />
+    <ImageView
+        android:id="@+id/questionimageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/questionchooseimage"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/questionsubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/questionimageView"
+        />
+</RelativeLayout>
+</ScrollView>

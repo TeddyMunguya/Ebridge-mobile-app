@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tracking.ebridge">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="ANDROID.PERMISSION.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdminLogin"
+            android:label="@string/title_activity_admin_login" />
+        <activity
+            android:name=".AdminHomeActivity"
+            android:label="@string/title_activity_admin_home" />
+        <activity
+            android:name=".AddFacultyActivity"
+            android:label="@string/title_activity_add_faculty" />
+        <activity
+            android:name=".FacultyDetails"
+            android:label="@string/title_activity_faculty_details" />
+        <activity
+            android:name=".FacultyLogin"
+            android:label="@string/title_activity_faculty_login" />
+        <activity
+            android:name=".FacultyHomeActivity"
+            android:label="@string/title_activity_faculty_home" />
+        <activity
+            android:name=".AddTimeTable"
+            android:label="@string/title_activity_add_time_table" />
+        <activity
+            android:name=".AddQuestionpapers"
+            android:label="@string/title_activity_add_questionpapers" />
+        <activity
+            android:name=".AddNotification"
+            android:label="@string/title_activity_add_notification" />
+        <activity
+            android:name=".DoubtsList"
+            android:label="@string/title_activity_doubts_list" />
+        <activity
+            android:name=".Viewdoubt"
+            android:label="@string/title_activity_viewdoubt" />
+        <activity
+            android:name=".StudentHomeActivity"
+            android:label="@string/title_activity_student_home" />
+        <activity
+            android:name=".Studentdatalist"
+            android:label="@string/title_activity_studentdatalist" />
+        <activity
+            android:name=".StudentdataViewing"
+            android:label="@string/title_activity_studentdata_viewing" />
+        <activity
+            android:name=".DoubtSending"
+            android:label="@string/title_activity_doubt_sending" />
+        <activity
+            android:name=".EditFacultyActivity"
+            android:label="@string/title_activity_edit_faculty"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ViewNotifications"
+            android:label="@string/title_activity_view_notifications"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ImageDisplayingActivity"
+            android:label="@string/title_activity_image_displaying"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".StudentLoginActivity" />
+        <activity android:name=".StudentRegisterActivity"></activity>
+    </application>
+
+</manifest>
